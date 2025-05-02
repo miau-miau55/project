@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Эффективная подготовка к ОГЭ и ЕГЭ по информатике. Теория, практика и персональные рекомендации.">
+    <title>ExamPrep | Подготовка к ОГЭ/ЕГЭ по информатике</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__brand">
+                <h1 class="header__title">Exam<span>Prep</span></h1>
+                <p class="header__subtitle">Подготовка к ОГЭ и ЕГЭ по информатике</p>
+            </div>
+            
+            <nav class="nav" aria-label="Основное меню">
+                <ul class="nav__list">
+                    <li><a href="oge.html" class="nav__link" aria-current="page">ОГЭ</a></li>
+                    <li><a href="ege.html" class="nav__link">ЕГЭ</a></li>
+                    <li><a href="exam-motivation.html" class="nav__link">Мотивация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero__content">
+                    <h2 id="hero-title" class="hero__title">Эффективная подготовка к экзаменам</h2>
+                    <p class="hero__text">Теория, практика, видеоразборы и персональные рекомендации</p>
+                    
+                    <div class="hero__buttons">
+                        <a href="oge.html" class="btn btn--primary" aria-label="Начать подготовку к ОГЭ">
+                            <span class="btn__icon">📘</span>
+                            Начать подготовку к ОГЭ
+                        </a>
+                        <a href="ege.html" class="btn btn--primary" aria-label="Начать подготовку к ЕГЭ">
+                            <span class="btn__icon">📗</span>
+                            Начать подготовку к ЕГЭ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title" class="section-title">Почему выбирают нас?</h2>
+                
+                <div class="features__grid">
+                    <article class="feature-card" tabindex="0">
+                        <div class="feature-card__icon" aria-hidden="true">📚</div>
+                        <h3 class="feature-card__title">Полные материалы</h3>
+                        <p class="feature-card__text">Вся необходимая теория и практика в одном месте</p>
+                    </article>
+                    
+                    <article class="feature-card" tabindex="0">
+                        <div class="feature-card__icon" aria-hidden="true">🎯</div>
+                        <h3 class="feature-card__title">Актуальные задания</h3>
+                        <p class="feature-card__text">Только соответствующие текущему году экзамены</p>
+                    </article>
+                    
+                    <article class="feature-card" tabindex="0">
+                        <div class="feature-card__icon" aria-hidden="true">🧠</div>
+                        <h3 class="feature-card__title">Методика запоминания</h3>
+                        <p class="feature-card__text">Специальные техники для лучшего усвоения</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback" aria-labelledby="feedback-title">
+            <div class="container">
+                <h2 id="feedback-title" class="section-title">Остались вопросы?</h2>
+                <p class="feedback__subtitle">Напишите нам, и мы обязательно вам ответим</p>
+                
+                <form class="feedback-form" action="#" method="POST" aria-label="Форма обратной связи">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" id="name" name="name" required class="form-input" aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Электронная почта</label>
+                        <input type="email" id="email" name="email" required class="form-input" aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Ваш вопрос или сообщение</label>
+                        <textarea id="message" name="message" rows="4" required class="form-textarea" aria-required="true"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--block">Отправить сообщение</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" aria-label="Подвал сайта">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copyright">&copy; 2025 ExamPrep. Все права защищены.</p>
+                <p class="footer__credits">Материалы собраны из открытых источников</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamPrep | Задание №1 ЕГЭ по информатике</title>
+    <meta name="description" content="Разбор задания №1 ЕГЭ по информатике - Количественные параметры информационных объектов">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="ege-task-page">
+    <header class="header">
+        <div class="container">
+            <div class="header__brand">
+                <h1 class="header__title">Exam<span>Prep</span> <span class="exam-badge">ЕГЭ</span></h1>
+                <p class="header__subtitle">Подготовка к ЕГЭ по информатике</p>
+            </div>
+            
+            <nav class="nav" aria-label="Основное меню">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="ege-info.html" class="nav__link">Об экзамене</a></li>
+                    <li><a href="ege-tasks-list.html" class="nav__link nav__link--active" aria-current="page">Задания</a></li>
+                    <li><a href="ege-videos.html" class="nav__link">Видеоуроки</a></li>
+                    <li><a href="ege-tests-list.html" class="nav__link">Тестирование</a></li>
+                    <li><a href="ege-bank.html" class="nav__link">Банк заданий</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <nav class="breadcrumbs" aria-label="Навигационная цепочка">
+                <ol>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="ege-tasks-list.html">Задания ЕГЭ</a></li>
+                    <li aria-current="page">Задание №1</li>
+                </ol>
+            </nav>
+            
+            <div class="task-navigation">
+                <a href="ege-tasks-list.html" class="btn btn--secondary btn--small" aria-label="Вернуться к списку уроков">
+                    ← К списку заданий
+                </a>
+            </div>
+            
+            <div class="task-container">
+                <div class="task-header">
+                    <h1 class="task-title">Задание №1. Количественные параметры информационных объектов</h1>
+                    <div class="task-description">
+                        <p>В этом задании проверяются знания о количественных параметрах информационных объектов и умения вычислять их. Рассматриваются различные кодировки символов и методы расчета объема информации.</p>
+                    </div>
+                    
+                    <ul class="task-topics">
+                        <li>Кодировка, в которой каждый символ кодируется 8 битами</li>
+                        <li>Кодировка, в которой каждый символ кодируется 16 битами</li>
+                        <li>Кодировка, в которой каждый символ кодируется 32 битами</li>
+                    </ul>
+                </div>
+                
+                <div class="video-wrapper">
+                    <div class="video-ratio">
+                        <div class="video-poster" onclick="loadVideo(this, '407916655a139b5b7d81ba60c05b2c4d')"></div>
+                    </div>
+                </div>
+                
+                <div class="task-actions">
+                    <a href="ege-test-1.html" class="btn btn--secondary">Пройти тест по заданию №1</a>
+                    <a href="ege-task-2.html" class="btn btn--primary">Следующее задание →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" aria-label="Подвал сайта">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copyright">&copy; 2025 ExamPrep. Все права защищены.</p>
+                <p class="footer__credits">Материалы собраны из открытых источников</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function loadVideo(element, videoId) {
+            const container = element.parentElement;
+            element.remove();
+            
+            const iframe = document.createElement('iframe');
+            iframe.className = 'video-iframe';
+            iframe.src = `https://rutube.ru/play/embed/${videoId}`;
+            iframe.allow = 'fullscreen';
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('aria-label', 'Видеоурок');
+            
+            container.appendChild(iframe);
+        }
+    </script>
+</body>
+</html>

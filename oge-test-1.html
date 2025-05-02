@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamPrep | Тест по заданию №1 ОГЭ</title>
+    <meta name="description" content="Тест по заданию №1 ОГЭ по информатике - Количественные параметры информационных объектов">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="oge-test-page">
+    <header class="header">
+        <div class="container">
+            <div class="header__brand">
+                <h1 class="header__title">Exam<span>Prep</span> <span class="exam-badge">ОГЭ</span></h1>
+                <p class="header__subtitle">Подготовка к ОГЭ по информатике</p>
+            </div>
+            
+            <nav class="nav" aria-label="Основное меню">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="oge-info.html" class="nav__link">Об экзамене</a></li>
+                    <li><a href="oge-tasks-list.html" class="nav__link">Задания</a></li>
+                    <li><a href="oge-videos.html" class="nav__link">Видеоуроки</a></li>
+                    <li><a href="oge-tests-list.html" class="nav__link nav__link--active" aria-current="page">Тестирование</a></li>
+                    <li><a href="oge-bank.html" class="nav__link">Банк заданий</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <nav class="breadcrumbs" aria-label="Навигационная цепочка">
+                <ol>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="oge-tests-list.html">Тесты ОГЭ</a></li>
+                    <li aria-current="page">Тест по заданию №1</li>
+                </ol>
+            </nav>
+            
+            <div class="test-navigation">
+                <a href="oge-tests-list.html" class="btn btn--secondary btn--small" aria-label="Вернуться к списку тестов">
+                    ← К списку тестов
+                </a>
+            </div>
+            
+            <div class="test-container">
+                <div class="test-header">
+                    <h1 class="test-title">Тест по заданию №1. Количественные параметры информационных объектов</h1>
+                    <p class="test-description">Проверьте свои знания по теме кодирования информации и работы с числовыми параметрами</p>
+                </div>
+                
+                <!-- Задание 1 -->
+                <div class="question">
+                    <h3>Задание 1: Определение информационного объема</h3>
+                    <p>В кодировке Unicode каждый символ кодируется 16 битами. Определите размер следующего предложения в данной кодировке:</p>
+                    <p><em>«Я изучаю информатику!»</em></p>
+                    
+                    <div class="answer-input">
+                        <input type="text" id="answer1" placeholder="Введите число байт">
+                        <button class="btn btn--primary" onclick="checkAnswer('answer1', '38', 'result1')">Проверить ответ</button>
+                        <button class="btn btn--secondary" onclick="showAnswer('correctAnswer1', '38')">Узнать ответ</button>
+                    </div>
+                    <div id="result1" class="result"></div>
+                    <div id="correctAnswer1" class="correct-answer"></div>
+                </div>
+                
+                <!-- Задание 2 -->
+                <div class="question">
+                    <h3>Задание 2: Кодирование чисел</h3>
+                    <p>Для кодирования некоторой последовательности, состоящей из букв А, Б, В, Г, Д, решили использовать неравномерный двоичный код, удовлетворяющий условию Фано. Для букв А, Б, В использовали соответственно кодовые слова 00, 01, 100. Какое наименьшее возможное количество символов может быть в коде для буквы Г, если код Д будет на 1 символ длиннее?</p>
+                    
+                    <div class="answer-input">
+                        <input type="text" id="answer2" placeholder="Введите число">
+                        <button class="btn btn--primary" onclick="checkAnswer('answer2', '3', 'result2')">Проверить ответ</button>
+                        <button class="btn btn--secondary" onclick="showAnswer('correctAnswer2', '3')">Узнать ответ</button>
+                    </div>
+                    <div id="result2" class="result"></div>
+                    <div id="correctAnswer2" class="correct-answer"></div>
+                </div>
+                
+                <!-- Задание 3 -->
+                <div class="question">
+                    <h3>Задание 3: Работа с таблицей кодов</h3>
+                    <p>Дана кодовая таблица:</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Символ</th>
+                                <th>Код</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>А</td><td>00</td></tr>
+                            <tr><td>Б</td><td>01</td></tr>
+                            <tr><td>В</td><td>100</td></tr>
+                            <tr><td>Г</td><td>101</td></tr>
+                            <tr><td>Д</td><td>110</td></tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>Закодируйте слово «БАГАЖ» и укажите его длину в битах.</p>
+                    
+                    <div class="answer-input">
+                        <input type="text" id="answer3" placeholder="Введите число бит">
+                        <button class="btn btn--primary" onclick="checkAnswer('answer3', '12', 'result3')">Проверить ответ</button>
+                        <button class="btn btn--secondary" onclick="showAnswer('correctAnswer3', '12')">Узнать ответ</button>
+                    </div>
+                    <div id="result3" class="result"></div>
+                    <div id="correctAnswer3" class="correct-answer"></div>
+                </div>
+                
+                <!-- Задание 4 -->
+                <div class="question">
+                    <h3>Задание 4: Перевод единиц измерения</h3>
+                    <p>Сколько мегабайт информации содержит сообщение объемом 2<sup>23</sup> бит?</p>
+                    
+                    <div class="answer-input">
+                        <input type="text" id="answer4" placeholder="Введите число">
+                        <button class="btn btn--primary" onclick="checkAnswer('answer4', '1', 'result4')">Проверить ответ</button>
+                        <button class="btn btn--secondary" onclick="showAnswer('correctAnswer4', '1')">Узнать ответ</button>
+                    </div>
+                    <div id="result4" class="result"></div>
+                    <div id="correctAnswer4" class="correct-answer">Правильный ответ: 1 МБ (2²³ бит = 1 МБ)</div>
+                </div>
+                
+                <!-- Задание 5 -->
+                <div class="question">
+                    <h3>Задание 5: Определение количества символов</h3>
+                    <p>Сообщение, записанное буквами из 128-символьного алфавита, содержит 30 символов. Какой объем информации оно несет в байтах?</p>
+                    
+                    <div class="answer-input">
+                        <input type="text" id="answer5" placeholder="Введите число">
+                        <button class="btn btn--primary" onclick="checkAnswer('answer5', '30', 'result5')">Проверить ответ</button>
+                        <button class="btn btn--secondary" onclick="showAnswer('correctAnswer5', '30')">Узнать ответ</button>
+                    </div>
+                    <div id="result5" class="result"></div>
+                    <div id="correctAnswer5" class="correct-answer"></div>
+                </div>
+
+
+                <!-- Навигация между тестами -->
+                <div class="btn-navigation">
+                    <a href="oge-test-2.html" class="btn btn--secondary">
+                        Следующий тест →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" aria-label="Подвал сайта">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copyright">&copy; 2025 ExamPrep. Все права защищены.</p>
+                <p class="footer__credits">Материалы собраны из открытых источников</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function checkAnswer(answerId, correctAnswer, resultId) {
+            const userAnswer = document.getElementById(answerId).value.trim().toLowerCase();
+            const resultElement = document.getElementById(resultId);
+
+            if (userAnswer === correctAnswer) {
+                resultElement.textContent = "✓ Ответ верный!";
+                resultElement.className = "result result--correct";
+            } else {
+                resultElement.textContent = "✗ Ответ неверный. Попробуйте снова.";
+                resultElement.className = "result result--incorrect";
+            }
+        }
+
+        function showAnswer(elementId, answer) {
+            const answerElement = document.getElementById(elementId);
+            answerElement.textContent = "Правильный ответ: " + answer;
+            answerElement.style.display = "block";
+        }
+    </script>
+</body>
+</html>
